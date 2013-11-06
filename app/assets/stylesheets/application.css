@@ -1,0 +1,82 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the top of the
+ * compiled file, but it's generally better to create a new file per style scope.
+ *
+ *= require_self
+ *= require_tree .
+ */
+
+
+body { padding: 100px 0em; font-family: Geneva, Tahoma, Verdana, sans-serif; }
+
+h1, h2, h3 { font-weight: 100;  }
+
+table, td, th { vertical-align: middle !important; border: none !important; }
+table th { border-bottom: 1px solid #DDD !important; text-align: left; padding-left: 10px; }
+
+tbody td:first-child { padding: 0px; }
+
+textarea, input[type='text'] { width: 100%; }
+textarea { height: 150px; }
+
+.ideas-heading { 
+  width: 100%; height: 40px; position: relative; margin-bottom: 50px;
+}
+
+.ideas-heading .btn.btn-primary { 
+  position: absolute; right: 45px; top: 10px; margin: 0px;
+}
+
+.ideas-heading h1 { display: inline-block; }
+
+.btn.btn-primary { color: white; margin: 2em 0em; }
+.btn.btn-danger  { color: white; }
+
+table img { 
+  width: 68px;
+  height: 68px;
+  border: 4px solid #3C3C3C;
+  margin: .5em .3em;
+
+  -webkit-background-clip: padding-box;
+  -webkit-border-radius: 100px;
+     -moz-border-radius: 100px;
+      -ms-border-radius: 100px;
+          border-radius: 100px;
+
+}
+
+
+table td:last-child { width: 200px; text-align: center; }
+table td { padding-left: 10px; padding-bottom: 10px; }
+tbody tr { border-bottom: 1px solid #ececec; cursor: pointer; height: 100px; overflow: hidden; }
+
+footer {
+  margin-top: 100px;
+  margin-top: 100px;
+  position: fixed;
+  width: 100%;
+  bottom: 0px;
+  height: 40px;
+  background: #2c2c2c;
+  color: white;
+  border-top: 2px solid #B8B8B8;
+  text-align: center;
+  padding-top: 20px;
+  letter-spacing: 1px;
+
+  -webkit-transition: all .3s ease-in-out;
+   -moz-transition: all .3s ease-in-out;
+     -o-transition: all .3s ease-in-out;
+    -ms-transition: all .3s ease-in-out;
+        transition: all .3s ease-in-out;
+}
+
+footer:hover { height: 120px; }
+
